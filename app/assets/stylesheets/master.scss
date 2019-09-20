@@ -4,7 +4,7 @@
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('ep_naturalblack.png');
+  background: image_url('simple_dashed.png');
 }
 
 .navbar-inverse a.navbar-brand {
@@ -12,3 +12,37 @@
   font-weight: 100;
   color: white;
 }
+
+/*style for the main image "hero" */
+.hero {
+  background: image_url('jr-korpa-6YPthISMBZY-unsplash.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.frosty {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*removed white space between hero and top nav */
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+.frosty h1 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+

@@ -1,5 +1,5 @@
 class LessonsController < ApplicationController
-  def show
+ def show
   end
 
   private
@@ -8,5 +8,4 @@ class LessonsController < ApplicationController
   def current_lesson
     @current_lesson ||= Lesson.find(params[:id])
   end
-
 end

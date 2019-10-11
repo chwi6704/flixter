@@ -27,9 +27,6 @@ class EnrollmentsController < ApplicationController
     redirect_to root_path
   end
 
-
-  end
-
   private
 
   def current_course

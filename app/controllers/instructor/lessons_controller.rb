@@ -32,9 +32,13 @@ before_action :require_authorized_for_current_lesson, only: [:update]
     end
   end
 
-   helper_method :current_section
+    helper_method :current_section
   def current_section
-    @current_section ||= Section.find(params[:section_id])
+    if params[:section_id].present?
+      @current_section ||= Section.find(params[:section_id])
+    else
+      current_lesson.section
+    end
   end
 
   def lesson_params

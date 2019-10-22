@@ -22,14 +22,14 @@ def create
     end
   end
 
-  helper_method :current_course
-  def current_course
-    if params[:course_id]
-      @current_course ||= Course.find(params[:course_id])
+  helper_method :current_section
+  def current_section
+    if params[:section_id].present?
+      @current_section ||= Section.find(params[:section_id])
     else
-      current_section.course
+      current_lesson.section
     end
-  end
+  end 
 
   def section_params 
     params.require(:section).permit(:title, :row_order_position)
